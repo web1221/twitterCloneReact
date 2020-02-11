@@ -11,7 +11,7 @@ function App() {
       <hr />
       <Body />
     </div>
-);
+  );
 }
 
 export default App;

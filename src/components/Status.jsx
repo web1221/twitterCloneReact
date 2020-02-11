@@ -1,7 +1,7 @@
 import React from "react";
 
-function Stats(){
-  var statStyle = {
+function Status(){
+  var statusStyle = {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
@@ -10,11 +10,8 @@ function Stats(){
     color: "gray"
   }
   return (
-    <div style={statStyle}>
-      <p>TWEETS</p>
-      <p>FOLLOWING</p>
-      <p>FOLLOWERS</p>
+    <div style={statusStyle}>
     </div>
   );
 }
-export default Stats;
+export default Status;

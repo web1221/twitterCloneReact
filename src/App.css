@@ -10,7 +10,6 @@ hr {
   margin: 8px;
 }
 
-
 .NavBar {
   display: flex;
   justify-content: space-between;
@@ -34,7 +33,8 @@ hr {
 
 .Body {
   padding: 10px;
-  font-weight:
+  display: flex;
+
 }
 
 .About {
