@@ -4,9 +4,11 @@ function Post(){
   var postStyle = {
       padding: "0px 10px",
       width: "200px",
-      height: "45px"
+      height: "45px",
+      display: "flex",
+      textAlign: "left"
     }
-    
+
   return (
     <div>
       <input  style={postStyle} type="text" placeholder="What's happening?" />
