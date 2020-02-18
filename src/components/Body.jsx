@@ -1,9 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types"
 import About from "./About";
 import Account from "./Account";
 import Feed from "./Feed";
+import TweetList from "./TweetList";
 
-function Body(){
+function Body(props){
   return (
     <div className="Body">
       <div>
@@ -11,10 +13,15 @@ function Body(){
         <About />
       </div>
       <div>
-        <Feed />
+      <Feed onNewTweetCreation={props.onNewTweetCreation}/>
+      <TweetList tweetList={props.tweetList}/>
       </div>
     </div>
   );
 }
+Body.propTypes = {
+  tweetList: PropTypes.array
+};
+
 
 export default Body;

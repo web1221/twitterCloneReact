@@ -1,8 +1,8 @@
 import React from "react";
 import Status from "./Status";
-import Post from "./Post";
+import NewTweetForm from "./NewTweetForm";
 
-function Feed(){
+function Feed(props){
   var feedStyle = {
     margin: "0px 16px",
     width: "480px",
@@ -11,7 +11,7 @@ function Feed(){
   return (
     <div style={feedStyle}>
       <Status />
-      <Post />
+      <NewTweetForm onNewTweetCreation={props.onNewTweetCreation} />
     </div>
   );
 }
